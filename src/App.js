@@ -11,13 +11,18 @@ class App extends Component {
     }
   }
 
+  // create an event listener for when an image link is entered
+  onInputChange = (event) => {
+    console.log(event.target.value)
+  }
+
   render () {
     return (
       <div className="App">
         <h1>Verified! Face Recognition App</h1>
         <Navigation></Navigation>
         {/* formally known as 'ImageLinkForm' */}
-         <ImageUploadForm></ImageUploadForm>
+         <ImageUploadForm onInputChange={this.onInputChange}></ImageUploadForm>
         {/* <FaceRecognition></FaceRecognition> */}
       </div>
     )

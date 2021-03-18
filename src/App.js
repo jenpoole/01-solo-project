@@ -29,11 +29,13 @@ class App extends Component {
   onSubmit = () => {
     console.log('image submitted!')
     
-    // face detection model
-    // note: 1st argument can either be `Clarifai.GENERAL_MODEL` or a string of numbers
+    // face detection model.
+    // note: 1st argument can either be `Clarifai.GENERAL_MODEL` 
+    // or a string of numbers to represent the detection model used. 
     clarifai.models.predict(Clarifai.GENERAL_MODEL, testImg)
       .then(response => {
-        console.log(`clarifai response: ${JSON.stringify(response)}`) 
+        // console.log(`clarifai response: ${JSON.stringify(response)}`) 
+        console.log(response.outputs)
       })
       .catch();
       }

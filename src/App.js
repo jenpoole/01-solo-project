@@ -16,13 +16,21 @@ class App extends Component {
     console.log(event.target.value)
   }
 
+  // handle image link submission
+  onSubmit = () => {
+    console.log('submitted!')
+  }
+
   render () {
     return (
       <div className="App">
         <h1>Verified! Face Recognition App</h1>
         <Navigation></Navigation>
         {/* formally known as 'ImageLinkForm' */}
-         <ImageUploadForm onInputChange={this.onInputChange}></ImageUploadForm>
+         <ImageUploadForm 
+          onInputChange={this.onInputChange} 
+          onSubmit={this.onSubmit}>
+        </ImageUploadForm>
         {/* <FaceRecognition></FaceRecognition> */}
       </div>
     )

@@ -1,5 +1,3 @@
-// import { Component } from 'react';
-
 // create a stateless component (pure function)
 const Navigation = () => {
   return (

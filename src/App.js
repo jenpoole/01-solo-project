@@ -1,6 +1,7 @@
 import './App.css';
 import { Component } from 'react';
 import Navigation from './components/Navigation/Navigation'
+import ImageUploadForm from './components/ImageUploadForm/ImageUploadForm'
 
 class App extends Component {
   render () {
@@ -8,9 +9,9 @@ class App extends Component {
       <div className="App">
         <h1>Verified! Face Recognition App</h1>
         <Navigation></Navigation>
-        {/* rename this to ImageUploadForm */}
-        {/* <ImageLinkForm></ImageLinkForm>
-        <FaceRecognition></FaceRecognition> */}
+        {/* formally known as 'ImageLinkForm' */}
+         <ImageUploadForm></ImageUploadForm>
+        {/* <FaceRecognition></FaceRecognition> */}
       </div>
     )
   }

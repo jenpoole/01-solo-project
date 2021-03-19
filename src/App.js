@@ -12,7 +12,7 @@ const clarifai = new Clarifai.App({
 
 // important note for Clarifai images: use direct links to .jpg files
 // const testImg1 = 'https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fwomensmedia%2Ffiles%2F2018%2F07%2FPhoto-happy-1-unsplash-michael-dam.jpg'
-const testImg2 = 'https://clarifai.com/cms-assets/20180320221615/face-001.jpg'
+// const testImg2 = 'https://clarifai.com/cms-assets/20180320221615/face-001.jpg'
 
 class App extends Component {
   constructor() {

@@ -1,8 +1,8 @@
 // create a stateless component (pure function)
-const FaceRecognition = ({ testImg2 }) => {
+const FaceRecognition = ({ imageUrl }) => {
   return (
-    <div>
-      <img src={testImg2} alt={'demo'}></img>
+    <div className="faceRecognitionContainer">
+      <img src={imageUrl} alt={''}></img>
     </div>
   )
 }
